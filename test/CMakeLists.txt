@@ -4,7 +4,7 @@ include(FetchContent)
 FetchContent_Declare(
   googletest
   GIT_REPOSITORY https://gitee.com/extra-mirrors/googletest.git
-  GIT_TAG release-1.8.1
+  GIT_TAG  release-1.11.0
 )
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE) # for MSVC
 FetchContent_MakeAvailable(googletest)
