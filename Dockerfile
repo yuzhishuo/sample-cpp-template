@@ -16,7 +16,7 @@ RUN apt install -y gcc-11 g++-11
 
 RUN ln -s /usr/bin/gcc-11 /usr/bin/gcc && ln -s /usr/bin/g++-11 /usr/bin/g++
 
-RUN apt install -y gdb make
+RUN apt install -y gdb make clang-format
 
 ADD https://ghproxy.com/https://github.com/Kitware/CMake/releases/download/v3.16.0/cmake-3.16.0-linux-x86_64.sh .
 
