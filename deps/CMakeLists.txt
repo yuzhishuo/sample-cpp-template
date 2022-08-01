@@ -9,4 +9,3 @@ FetchContent_Declare(spdlog
 FetchContent_MakeAvailable(spdlog)
 
 
-target_link_libraries(${PROJECT_NAME} PRIVATE spdlog::spdlog)

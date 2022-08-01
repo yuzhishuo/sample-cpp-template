@@ -15,7 +15,7 @@ include_directories(${INCLUDE_DIR})
 add_executable(
     ${PROJECT_NAME} ${UNIT_TEST_SRCS} ${DIR_SRCS}
 )
-target_link_libraries(${PROJECT_NAME} PRIVATE gtest_main) 
+target_link_libraries(${PROJECT_NAME} algor gtest_main) 
 
 
 include(GoogleTest) # for gtest_discover_tests, gtest_add_tests
