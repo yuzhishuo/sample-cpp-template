@@ -23,7 +23,3 @@ ADD https://ghproxy.com/https://github.com/Kitware/CMake/releases/download/v3.16
 RUN chmod +x cmake-3.16.0-linux-x86_64.sh && bash cmake-3.16.0-linux-x86_64.sh --skip-license --prefix=/usr/local && rm -rf cmake-3.16.0-linux-x86_64.sh
 
 
-# git
-RUN apt install -y git
-RUN git clone https://ghproxy.com/https://github.com/yuzhishuo/sample-cpp-template.git
-
