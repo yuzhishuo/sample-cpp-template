@@ -18,8 +18,8 @@ RUN ln -s /usr/bin/gcc-11 /usr/bin/gcc && ln -s /usr/bin/g++-11 /usr/bin/g++
 
 RUN apt install -y gdb make clang-format git
 
-ADD https://ghproxy.com/https://github.com/Kitware/CMake/releases/download/v3.16.0/cmake-3.16.0-linux-x86_64.sh .
+ADD https://github.com/Kitware/CMake/releases/download/v3.24.0-rc5/cmake-3.24.0-rc5-linux-x86_64.sh .
 
-RUN chmod +x cmake-3.16.0-linux-x86_64.sh && bash cmake-3.16.0-linux-x86_64.sh --skip-license --prefix=/usr/local && rm -rf cmake-3.16.0-linux-x86_64.sh
+RUN chmod +x cmake-3.24.0-rc5-linux-x86_64.sh && bash cmake-3.24.0-rc5-linux-x86_64.sh --skip-license --prefix=/usr/local && rm -rf cmake-3.24.0-rc5-linux-x86_64.sh
 
 
